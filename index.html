@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="part0 heading center-text d-flex justify-center"><span>💴 </span>Wallet</div>
+        <div class="part1 balance center-text"><p>Balance: ₹<span id="balance"></span></p></div>
+        <div class="part2 sub-container d-flex justify-space-around flex-column">
+            <div class="spend d-flex">
+                <div class="spend-wrapper w-100">
+                    <p>Spend</p>
+                    <div class="d-flex input-container">
+                        <input class="d-block w-100" type="text" id="spendInput" placeholder="Your amount">
+                        <button id="spButton">➡️</button>
+                    </div>
+                    <textarea class="d-block w-100" name="NOTE" id="note1Input" cols="30" rows="3" placeholder="note"></textarea>
+                </div>
+            </div>
+            <div class="earn d-flex">
+                <div class="earn-wrapper w-100">
+                    <p>Earn</p>
+                    <div class="d-flex input-container">
+                        <input class="d-block w-100" type="text" id="earnInput" placeholder="Your amount">
+                        <button id="enButton">➡️</button>
+                    </div>
+                    <textarea class="d-block w-100" name="" id="note2Input" cols="30" rows="3" placeholder="note"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="part3 history"></div>
+        <div><button id="clearButton">clear</button></div>
+    </div>
+
+    <script src="calculation.js"></script>
+    <script src="render.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.center-text {
+    text-align: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.heading, .balance{
+    border-radius: 10px;
+    background-color: #1c737d;
+    color: white;
+    width: 95%;
+    box-shadow: 5px 5px 5px #032a2e;
+    padding: 10px;
+    font-size: 45px;
+    font-weight: 600;
+    margin:10px auto;
+}
+
+.balance {
+    background-color: #1c737d;
+}
+
+.heading span{
+    font-size: 50px;
+    margin-top: -17px;
+    padding: 0 10px;
+}
+
+.sub-container {
+    border-radius: 10px;
+    background-color:  #1c737d;
+    margin: 10px auto;
+    width: 95%;
+    padding: 30px 10px;
+    color: white;
+    box-shadow: 5px 5px 5px #032a2e;
+}
+
+.sub-container > div {
+    border-radius: 10px;
+    background-color:  #062e33;
+    box-shadow: 5px 5px 5px #0f373c;
+    padding:20px;
+    width: 45%;
+}
+
+.sub-container p {
+    font-size: 30px;
+    padding: 0 10px 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.sub-container button {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.earn {
+    background: linear-gradient(to right, #25ce23 0.5%, transparent 6%);
+}
+
+.spend {
+    background: linear-gradient(to right, #ff0000 0.5%, transparent 6%);
+}
+
+.spend p {
+    color: #ff0000;
+}
+
+.earn p {
+    color: #25ce23;
+}
+
+.input-container {
+    height: 30px;
+    margin: 5px 0;
+}
+
+.input-container input, textarea {
+    padding: 5px;
+}
+
+.history {
+    border-radius: 10px;
+    background-color:  #1c737d;
+    box-shadow: 5px 5px 5px #032a2e;
+    margin: 10px auto;
+    width: 95%;
+    color: white;
+    padding: 30px 20px;
+}
+
+.history > div {
+    margin: 10px 0;
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px #032a2e;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.history > div > div {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: rgba(250, 235, 215, 0.676);
+    border-radius: 10px;
+}
+
+.history > div > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history .earn-history {
+    background: linear-gradient(to right, #25ce23 30%, white 100%);
+    color: rgb(135, 129, 129);
+}
+
+.history .spend-history {
+    background: linear-gradient(to right, #ff0000dd 30%, white 100%);
+    color: rgb(135, 129, 129);
+}
+
+#clearButton {
+    display: block;
+    margin:20px auto;
+    font-size: 25px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #062e33;
+    color: white;
+    box-shadow: 3px 3px 3px #0f373c7e;
+}
+
+#clearButton:hover {
+    background-color: white;
+    color: #032a2e;
+}
+
+@media screen and (max-width:600px) {
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .sub-container > div {
+        width: 95%;
+        margin: 10px auto;
+    }
+}
